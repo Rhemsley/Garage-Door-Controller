@@ -1,0 +1,14 @@
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: D2
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    name: "Garage Door Button"
+
+switch:
+ - platform: gpio
+   name: "Relay"
+   pin: D1

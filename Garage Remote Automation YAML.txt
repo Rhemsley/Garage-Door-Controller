@@ -1,0 +1,13 @@
+alias: Garage Remote
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - switch.garage_remote
+condition: []
+action:
+  - type: toggle
+    device_id: 8e1f76f38cdb979f5abce305f69f390d
+    entity_id: switch.relay_2
+    domain: switch
+mode: single

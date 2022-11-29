@@ -1,0 +1,15 @@
+alias: Garage Button
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.garage_door_button_2
+    from: "off"
+    to: "on"
+condition: []
+action:
+  - type: toggle
+    device_id: 281b0845ddb7b9d517eadc36c18bb47b
+    entity_id: switch.garage_remote
+    domain: switch
+mode: single
